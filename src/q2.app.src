@@ -1,0 +1,15 @@
+{application, q2, [
+    {description, "An OTP application"},
+    {vsn, "0.1.0"},
+    {registered, []},
+    {mod, {q2_app, []}},
+    {applications, [
+        kernel, stdlib
+    ]},
+    {env, [
+        {packet_forwarder_listen, [{port, 1680}]}
+    ]},
+    {modules, []},
+    {licenses, ["Apache-2.0"]},
+    {links, []}
+ ]}.

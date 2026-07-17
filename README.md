@@ -1,5 +1,5 @@
 # q2
-Feature ที่ใช้งาน
+<u>Feature</u> ที่ใช้งาน<br>
 1.Amplitude Ratio (ratio)
    feature = |H_RX1| / |H_RX2|
            = sqrt(I1²+Q1²) / sqrt(I2²+Q2²)

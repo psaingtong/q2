@@ -38,3 +38,14 @@ cd /path/to/project
 rebar3 compile && echo "Done"
 แล้วกลับไป terminal 1 (Erlang shell)
 l(csi).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 1. สร้าง Swap File ขนาด 8GB
+sudo fallocate -l 8G /swapfile
+
+%% 2. ตั้งสิทธิ์ สั่ง Format และเปิดใช้งาน
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+
+%% 3. ตั้งค่า Swappiness ให้เป็น 10
+sudo sysctl vm.swappiness=10
